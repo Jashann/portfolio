@@ -1,0 +1,150 @@
+:root
+{
+    --primary: #4699E9;
+    --pirmary-light: #7FB3E6;
+    --primary-dark-1: #1083F3;
+    --primary-dark-2: #006AD1;
+    --light: rgba(232, 239, 245, 0.973);
+    --light-dark: rgb(224, 224, 224);
+    --gradient-col-1: #7f7fd5;
+    --gradient-col-2:  #86a8e7;
+    --gradient-col-3: #91eae4; 
+}
+/* Start of Utility Classes */
+.text-light{
+    color : var(--light);
+}
+.text-primary{
+    color : var(--primary);
+}
+.text-primary-light{
+    color: var(--pirmary-light);
+}
+.text-primary-dark-1{
+    color: var(--primary-dark-1);
+}
+.text-primary-dark-2{
+    color: var(--primary-dark-2);
+}
+.bg-light{
+    background : var(--light);
+}
+.bg-light-dark{
+    background : var(--light-dark);
+}
+.bg-primary{
+    background : var(--primary);
+}
+.bg-primary-light{
+    background: var(--pirmary-light);
+}
+.bg-primary-dark-1{
+    background: var(--primary-dark-1);
+}
+.bg-primary-dark-2{
+    background: var(--primary-dark-2);
+}
+.bg-gradient-col-1{
+    background: var(--gradient-col-1);
+}
+.bg-gradient-col-2{
+    background: var(--gradient-col-2);
+}
+.bg-gradient-col-3{
+    background: var(--gradient-col-3);
+}
+button.bg-primary-dark-2:hover{
+    background: var(--primary);
+}
+
+/* End of Utility Classes */
+
+/* Start of Universal Styles */
+a{
+    color: var(--light);
+}
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+/* End of Universal Styles */
+
+/* Start of Individual Styles */
+#sidebar
+{
+    background: url('./../Vendors/backrgounds/IMG_2484.jpg');
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+}
+
+#nav .selected{
+    background: linear-gradient(to right, var(--primary),var(--pirmary-light));
+    border-radius: 4px;
+    padding: 4px;
+}
+#profile img{
+    height: 150px;
+    width: 150px;
+}
+#social img{
+    width: 50px;
+    height: 50px;
+}
+#main-header{
+    background: linear-gradient(to bottom right,#0177a7,var(--primary-dark-1),var(--primary),var(--pirmary-light),var(--light));
+}
+#main-header button:hover{
+    background-color: var(--primary-dark-1);
+}
+
+#slider{
+    background: var(--light-dark);
+}
+
+.website img{
+    width: 100%;
+    height: 100%;
+}
+#pricing{
+    background: linear-gradient(to right, var(--gradient-col-1), var(--gradient-col-2), var(--gradient-col-3));
+}
+#pricing img{
+    height: 32px;
+    width: 32px;
+    background: var(--light-dark);
+    padding: 5px;
+    border-radius:5px ;
+}
+/* Ens of Individual Styles */
+
+@media only screen and (max-width:768px)
+{
+    #sidebar,#main-section{
+        position: static;
+        width: 100% !important;
+    }
+    #nav li{
+        margin-left: 15px;
+    }
+    #social{
+       display: flex;
+       justify-content: space-around;
+    }
+    #main-header h2{
+        text-align: center !important;
+    }
+    #slider img{
+        height: 400px;
+        width: 400px;
+    }
+    #portfolio{
+        text-align: center;
+    }
+    #portfolio h2{
+        margin-top: 30px;
+    }
+    #pricing .card{
+        margin-left: 17%;
+    }
+}
