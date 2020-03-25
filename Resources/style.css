@@ -72,10 +72,10 @@ a:hover{
 /* Start of Individual Styles */
 #sidebar
 {
-    background: url('./../Vendors/backrgounds/IMG_2484.jpg');
-    background-repeat: no-repeat;
     position: sticky;
+    background: url('./../Vendors/backrgounds/IMG_2484.jpg') no-repeat center center/cover;
     top: 0;
+    left: 0;
 }
 
 #nav .selected{
@@ -122,9 +122,9 @@ a:hover{
 {
     #sidebar{
         height: 100% !important;
+        position: relative;
     }
     #sidebar,#main-section{
-        position: static;
         width: 100% !important;
     }
     #nav li{
