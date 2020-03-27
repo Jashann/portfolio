@@ -73,7 +73,7 @@ a:hover{
 #sidebar
 {
     position: sticky;
-    background: url('./../Vendors/backrgounds/IMG_2484.jpg') no-repeat center center/cover;
+    background: linear-gradient(to bottom right,#0177a7,var(--primary-dark-1),var(--primary),var(--pirmary-light),var(--light));
     top: 0;
     left: 0;
 }
@@ -92,14 +92,26 @@ a:hover{
     height: 50px;
 }
 #main-header{
-    background: linear-gradient(to bottom right,#0177a7,var(--primary-dark-1),var(--primary),var(--pirmary-light),var(--light));
+    background: url('./../Vendors/backrgounds/IMG_2484.jpg') no-repeat center center/cover;
+    color: #fff;
 }
 #main-header button:hover{
     background-color: var(--primary-dark-1);
 }
 
 #slider{
-    background: var(--light-dark);
+    background: #fff;
+}
+.carousel-control-next-icon{
+    /* change background */
+    background: url("./../Vendors/arrows/right\ arrow.svg")no-repeat center center/cover;
+    height: 100px;
+    width: 100px;
+}
+.carousel-control-prev-icon{
+    background: url("./../Vendors/arrows/left\ arrow.svg")no-repeat center center/cover;
+    height: 100px;
+    width: 100px;
 }
 
 .website img{
@@ -121,7 +133,7 @@ a:hover{
 @media only screen and (max-width:768px)
 {
     #sidebar{
-        height: 100% !important;
+        height: 100vh !important;
         position: relative;
     }
     #sidebar,#main-section{
