@@ -70,6 +70,9 @@ a:hover{
 /* End of Universal Styles */
 
 /* Start of Individual Styles */
+#sidebar *{
+    box-sizing: border-box;
+}
 #sidebar
 {
     position: sticky;
@@ -154,8 +157,8 @@ a:hover{
         text-align: center !important;
     }
     #slider img{
-        height: 400px;
-        width: 400px;
+        height: 200px;
+        width: 200px;
     }
     #portfolio{
         text-align: center;
