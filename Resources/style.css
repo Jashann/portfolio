@@ -125,9 +125,6 @@ body.show-nav{
     background-color: var(--primary-dark-1);
 }
 
-#slider{
-    background: #fff;
-}
 .carousel-control-next-icon{
     /* change background */
     background: url("./../Vendors/arrows/right\ arrow.svg")no-repeat center center/cover;
@@ -158,13 +155,6 @@ body.show-nav{
 
 @media only screen and (max-width:768px)
 {
-    #sidebar{
-        height: 100vh !important;
-        position: relative;
-    }
-    #sidebar,#main-section{
-        width: 100% !important;
-    }
     #nav li{
         margin-left: 15px;
     }
